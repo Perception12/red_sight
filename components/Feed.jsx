@@ -65,7 +65,7 @@ const Feed = () => {
       >
         <input
           type="text"
-          placeholder="search for a tag or username"
+          placeholder="search for plate number, or intersection name"
           value={searchText}
           onChange={handleSearchChange}
           className="search_input peer"
