@@ -11,7 +11,7 @@ export default async function Home() {
   return (
     <section className="w-full flex-center flex-col">
       <h1 className="head_text text-center">
-        Real Time Monitoring
+        Real Time Monitoring:
         <br className="" />
         <span className="orange_gradient text-center">No More Missed Violations</span>
       </h1>
