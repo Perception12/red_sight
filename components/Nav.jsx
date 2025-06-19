@@ -10,7 +10,7 @@ const Nav = () => {
   const [toggleDropdown, setToggleDropdown] = useState(false);
 
   return (
-    <nav className="w-full flex-between mb-16 pt-3">
+    <nav className="w-full flex-between mb-16 pt-5">
       <Link href="/" className="flex gap-2 flex-center">
         <Image
           src="/assets/images/logo.svg"
@@ -26,7 +26,11 @@ const Nav = () => {
       <div className="sm:flex hidden">
         {session?.user ? (
           <div className="flex gap-3 md:gap-5">
-            <button type="button" onClick={() => signOut({callbackUrl: "/login"})} className="outline_btn">
+            <button
+              type="button"
+              onClick={() => signOut({ callbackUrl: "/login" })}
+              className="outline_btn"
+            >
               Sign Out
             </button>
           </div>
@@ -36,24 +40,17 @@ const Nav = () => {
       </div>
 
       {/* Mobile Navigation */}
-      <div className="sm:hidden flex relative">
+      <div className="sm:hidden flex">
         {session?.user ? (
-          <div className="flex">
-            {toggleDropdown && (
-              <div className="dropdown">
-                <button
-                  type="button"
-                  className="w-full mt-5 black_btn"
-                  onClick={() => {
-                    setToggleDropdown(false);
-                    signOut();
-                  }}
-                >
-                  Sign Out
-                </button>
-              </div>
-            )}
-          </div>
+          <button
+            type="button"
+            className="w-full black_btn"
+            onClick={() => {
+              signOut();
+            }}
+          >
+            Sign Out
+          </button>
         ) : (
           <></>
         )}
