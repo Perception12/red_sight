@@ -47,7 +47,7 @@ const LoginPage = () => {
             Login to <span className="orange_gradient">RedSight</span>
           </h2>
 
-          <p className="font-satoshi text-gray-700">
+          <p className="font-satoshi text-gray-700 text-center">
             Monitor and manage traffic violations in real-time
           </p>
         </div>
