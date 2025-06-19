@@ -42,9 +42,16 @@ const LoginPage = () => {
         onSubmit={handleLogin}
         className="mt-10 w-full max-w-xl flex flex-col gap-7 glassmorphism"
       >
-        <h2 className="head_2_text">
-          Sign in to <span className="orange_gradient">RedSight</span>
-        </h2>
+        <div className="flex flex-col items-center gap-4">
+          <h2 className="text-2xl font-bold text-center">
+            Login to <span className="orange_gradient">RedSight</span>
+          </h2>
+
+          <p className="font-satoshi text-gray-700">
+            Monitor and manage traffic violations in real-time
+          </p>
+        </div>
+
         <label>
           <span className="font-satoshi font-semibold text-base text-gray-700">
             Email
