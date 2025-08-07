@@ -38,6 +38,7 @@ const Feed = () => {
         `/api/violations?page=${page}&limit=${itemsPerPage}`
       );
       const data = await res.json();
+      // console.log(data)
       setViolations(data.data);
       setTotalCount(data.count);
       setLoading(false);
